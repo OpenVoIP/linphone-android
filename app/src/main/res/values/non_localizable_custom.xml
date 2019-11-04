@@ -55,14 +55,14 @@
     <!-- Start assistant in linphone login view instead of menu -->
     <bool name="assistant_use_linphone_login_as_first_fragment">false</bool>
     <!-- Start assistant in generic login view instead of menu -->
-    <bool name="assistant_use_generic_login_as_first_fragment">false</bool>
+    <bool name="assistant_use_generic_login_as_first_fragment">true</bool>
     <!-- Start Linphone creation account in loginFragment view instead of menu -->
     <bool name="assistant_use_create_linphone_account_as_first_fragment">false</bool>
     <bool name="assistant_hide_status_bar">true</bool>
     <bool name="assistant_hide_top_bar">false</bool>
-    <bool name="hide_linphone_accounts_in_assistant">false</bool>
+    <bool name="hide_linphone_accounts_in_assistant">true</bool>
     <bool name="hide_generic_accounts_in_assistant">false</bool>
-    <bool name="hide_remote_provisioning_in_assistant">false</bool>
+    <bool name="hide_remote_provisioning_in_assistant">true</bool>
     <!-- Set the email field of the wizard with one of the gmail account registered on the device -->
     <bool name="pre_fill_email_in_assistant">true</bool>
     <bool name="assistant_account_validation_mandatory">false</bool>
@@ -84,7 +84,7 @@
     <bool name="hide_accounts">false</bool>
 
     <!-- Chat -->
-    <bool name="disable_chat">false</bool>
+    <bool name="disable_chat">true</bool>
     <bool name="disable_chat_message_notification">false</bool>
     <bool name="disable_chat_send_file">false</bool>
     <bool name="lower_space_between_chat_bubbles_if_same_person">true</bool>
@@ -103,7 +103,7 @@
 
     <!-- Contacts -->
     <bool name="hide_contact_phone_numbers">false</bool>
-    <bool name="hide_contact_sip_addresses">false</bool>
+    <bool name="hide_contact_sip_addresses">true</bool>
     <bool name="hide_phone_numbers_in_editor">false</bool>
     <bool name="hide_sip_addresses_in_editor">false</bool>
     <bool name="allow_only_one_phone_number">false</bool>
@@ -120,7 +120,7 @@
     <!-- Side Menu -->
     <bool name="hide_assistant_from_side_menu">false</bool>
     <bool name="hide_settings_from_side_menu">false</bool>
-    <bool name="hide_recordings_from_side_menu">false</bool>
+    <bool name="hide_recordings_from_side_menu">true</bool>
     <bool name="disable_accounts_settings_from_side_menu">false</bool>
     <bool name="show_log_out_in_side_menu">false</bool>
 

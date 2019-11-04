@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone Service</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">CooCall</string>
+  <string name="service_name">CooCall Service</string>
+  <string name="addressbook_label">CooCall</string>
+  <string name="notification_title">CooCall</string>
   <string name="wait_dialog_text">Démarrage</string>
   <string name="notification_registered">%s connecté</string>
   <string name="notification_register_failure">%s connexion échouée</string>

@@ -95,9 +95,10 @@ public class SideMenuFragment extends Fragment {
                             getResources().getString(R.string.menu_recordings),
                             R.drawable.menu_recordings));
         }
-        sideMenuItems.add(
-                new SideMenuItem(
-                        getResources().getString(R.string.menu_about), R.drawable.menu_about));
+        // 移除 About
+        // sideMenuItems.add(
+        //         new SideMenuItem(
+        //                 getResources().getString(R.string.menu_about), R.drawable.menu_about));
         mSideMenuItemList = view.findViewById(R.id.item_list);
 
         mSideMenuItemList.setAdapter(

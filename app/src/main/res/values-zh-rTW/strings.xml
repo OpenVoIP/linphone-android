@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone 服務</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">CooCall</string>
+  <string name="service_name">CooCall 服務</string>
+  <string name="addressbook_label">CooCall</string>
+  <string name="notification_title">CooCall</string>
   <string name="wait_dialog_text">啟動中</string>
   <string name="notification_registered">%s 已連線</string>
   <string name="notification_register_failure">%s 無法連線</string>
@@ -13,7 +13,7 @@
   <string name="about_liblinphone_version">Linphone Core %s</string>
   <string name="about_liblinphone_sdk_version">Linphone SDK %s</string>
   <string name="about_privacy_policy">檢視我們的隱私策略</string>
-  <string name="sync_account_name">Linphone 聯絡人</string>
+  <string name="sync_account_name">coocall 聯絡人</string>
   <!--Notifications-->
   <string name="notification_reply_label">回覆</string>
   <string name="notification_replied_label">傳送回覆：%s</string>

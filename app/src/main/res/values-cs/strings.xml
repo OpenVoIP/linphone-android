@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">CooCall</string>
+  <string name="addressbook_label">CooCall</string>
+  <string name="notification_title">CooCall</string>
   <string name="tunnel_host"></string>
   <!--Notifications-->
   <string name="notification_reply_label">Odpovědět</string>
