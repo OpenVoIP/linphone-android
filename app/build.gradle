@@ -85,6 +85,11 @@ android {
         abortOnError false
     }
 
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
     compileSdkVersion 29
     defaultConfig {
         minSdkVersion 21
@@ -188,6 +193,9 @@ dependencies {
     } else {
         implementation "org.linphone:linphone-sdk-android:4.3+"
     }
+
+    implementation project(':flutter')
+    implementation 'androidx.annotation:annotation:1.0.2'
 }
 if (firebaseEnabled()) {
     apply plugin: 'com.google.gms.google-services'

@@ -112,6 +112,10 @@
             android:noHistory="true"/>
 
         <activity
+            android:name=".flutter.FlutterActivity"
+            android:noHistory="true"/>
+
+        <activity
             android:name=".settings.SettingsActivity"/>
 
         <activity

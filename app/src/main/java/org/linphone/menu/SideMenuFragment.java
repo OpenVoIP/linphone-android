@@ -34,6 +34,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import java.util.ArrayList;
 import java.util.List;
 import org.linphone.LinphoneManager;
@@ -45,10 +47,14 @@ import org.linphone.core.Core;
 import org.linphone.core.ProxyConfig;
 import org.linphone.core.RegistrationState;
 import org.linphone.core.tools.Log;
+import org.linphone.flutter.FlutterActivity;
 import org.linphone.recording.RecordingsActivity;
 import org.linphone.settings.LinphonePreferences;
 import org.linphone.settings.SettingsActivity;
 import org.linphone.utils.LinphoneUtils;
+
+import io.flutter.app.FlutterFragmentActivity;
+import io.flutter.facade.Flutter;
 
 public class SideMenuFragment extends Fragment {
     private DrawerLayout mSideMenu;
@@ -99,6 +105,11 @@ public class SideMenuFragment extends Fragment {
         // sideMenuItems.add(
         //         new SideMenuItem(
         //                 getResources().getString(R.string.menu_about), R.drawable.menu_about));
+
+        sideMenuItems.add(
+                    new SideMenuItem("广播", R.drawable.menu_about)
+        );
+
         mSideMenuItemList = view.findViewById(R.id.item_list);
 
         mSideMenuItemList.setAdapter(
@@ -129,6 +140,8 @@ public class SideMenuFragment extends Fragment {
                             startActivity(new Intent(getActivity(), MenuAssistantActivity.class));
                         } else if (selectedItem.equals(getString(R.string.menu_recordings))) {
                             startActivity(new Intent(getActivity(), RecordingsActivity.class));
+                        } else if (selectedItem.equals("广播")){
+                            startActivity(new Intent(getActivity(), FlutterActivity.class));
                         }
                     }
                 });
