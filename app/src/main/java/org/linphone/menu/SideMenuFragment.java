@@ -53,9 +53,6 @@ import org.linphone.settings.LinphonePreferences;
 import org.linphone.settings.SettingsActivity;
 import org.linphone.utils.LinphoneUtils;
 
-import io.flutter.app.FlutterFragmentActivity;
-import io.flutter.facade.Flutter;
-
 public class SideMenuFragment extends Fragment {
     private DrawerLayout mSideMenu;
     private RelativeLayout mSideMenuContent;
@@ -101,14 +98,14 @@ public class SideMenuFragment extends Fragment {
                             getResources().getString(R.string.menu_recordings),
                             R.drawable.menu_recordings));
         }
-        // 移除 About
-        // sideMenuItems.add(
-        //         new SideMenuItem(
-        //                 getResources().getString(R.string.menu_about), R.drawable.menu_about));
 
         sideMenuItems.add(
                     new SideMenuItem("广播", R.drawable.menu_about)
         );
+
+        sideMenuItems.add(
+                new SideMenuItem(
+                        getResources().getString(R.string.menu_about), R.drawable.menu_about));
 
         mSideMenuItemList = view.findViewById(R.id.item_list);
 
@@ -249,14 +246,10 @@ public class SideMenuFragment extends Fragment {
             mAccountsList.setVisibility(View.VISIBLE);
             mAccountsList.setAdapter(new SideMenuAccountsListAdapter(getActivity()));
             mAccountsList.setOnItemClickListener(
-                    new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(
-                                AdapterView<?> adapterView, View view, int i, long l) {
-                            if (view != null && view.getTag() != null) {
-                                int position = Integer.parseInt(view.getTag().toString());
-                                ((MainActivity) getActivity()).showAccountSettings(position);
-                            }
+                    (adapterView, view, i, l) -> {
+                        if (view != null && view.getTag() != null) {
+                            int position = Integer.parseInt(view.getTag().toString());
+                            ((MainActivity) getActivity()).showAccountSettings(position);
                         }
                     });
         } else {

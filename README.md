@@ -2,6 +2,10 @@
 
 Linphone is a free VoIP and video softphone based on the SIP protocol.
 
+# Linphone + flutter 
+将 部分业务通过 Flutter 实现。
+![Demo](./demo.gif)
+
 # What's new
 
 Now the default way of building linphone-android is to download the AAR SDK in our maven repository.
